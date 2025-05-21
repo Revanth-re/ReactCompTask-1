@@ -77,8 +77,9 @@ let RawData=localStorage.getItem("ProductsItems");
   </div>
 ) : (
   <div className="subcategory">
+     <h1>Products</h1>
     <div className="item-block">
-      <h1>Products</h1>
+     
       <p>Mens</p>
       <button onClick={() => handleCart("mens")} className="add-btn">Add</button>
     </div>
