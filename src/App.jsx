@@ -54,6 +54,7 @@ let RawData=localStorage.getItem("ProductsItems");
     <div className="container">
 
   <div className="button-group">
+    <h1>Categories</h1>
     <button onClick={() => handleCategory("electronics")} className="category-btn">Electronics</button>
     <button onClick={() => handleCategory("Fashion")} className="category-btn">Fashion</button>
   </div>
@@ -63,6 +64,8 @@ let RawData=localStorage.getItem("ProductsItems");
   "Choose Your Category"
 ) : data ? (
   <div className="subcategory">
+    <h1>Products</h1>
+
     <div className="item-block">
       <p>Mobiles</p>
       <button onClick={() => handleCart("mobiles")} className="add-btn">Add</button>
@@ -75,6 +78,7 @@ let RawData=localStorage.getItem("ProductsItems");
 ) : (
   <div className="subcategory">
     <div className="item-block">
+      <h1>Products</h1>
       <p>Mens</p>
       <button onClick={() => handleCart("mens")} className="add-btn">Add</button>
     </div>
